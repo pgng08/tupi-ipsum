@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tupi Ipsum</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <script src="assets/js/GenTupiIpsum.js"></script>
+    <script src="assets/js/textoTupiIpsum.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Tupi Ipsum</h1>
+        <p>"Tupy or not tupy, that is the question."</p>
+        <p>Um gerador simples de texto Lorem Ipsum com base no <a
+                href="https://pt.wikipedia.org/wiki/L%C3%ADngua_nheengatu" target="_blank">Tupi moderno</a>.</p>
+    </header>
+    <main>
+        <div data-js-tupi-ipsum>
+
+            <form method="POST">
+                <input type="number" class="paragraph-number" name="numberOfParagraphs" value="5" required>
+                <button data-js-gerar-tupi>Gerar Tupi!</button>
+            </form>
+        </div>
+        <hr>
+        <p></p>
+
+        <p><span data-js-tupi-gerado></span>.</p>
+
+    </main>
+
+    <footer>
+        <hr>
+        <p>
+            <small>Tupi Ipsum - Projeto de estudos de um gerador de texto aleatório em JavaScript criado por Pablo Gomes.</small>
+        </p>
+    </footer>
+</body>
+
+</html>
