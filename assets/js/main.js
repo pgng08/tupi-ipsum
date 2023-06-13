@@ -1,12 +1,12 @@
 window.addEventListener("DOMContentLoaded", function () {
 
-    console.log("Olá, Tupi Ipsum!");
+  console.log("Olá, Tupi Ipsum!");
 
-    let elTupiIpsum = document.querySelector("[data-js-tupi-ipsum]");
+  let elTupiIpsum = document.querySelector("[data-js-tupi-ipsum]");
 
-    new GenTupiIpsum(elTupiIpsum);
+  new GenTupiIpsum(elTupiIpsum);
 
-    //console.log(elTupiIpsum);
+  //console.log(elTupiIpsum);
 
 
 

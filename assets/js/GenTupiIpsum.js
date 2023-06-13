@@ -20,9 +20,12 @@ class GenTupiIpsum {
     }
 
     init() {
-        this.injecteCitation();
-        this._elBtn.addEventListener("click", this.injecteCitation);
-
+        //this.injecteCitation();
+        this._elBtn.addEventListener("click", (event) => {
+            event.preventDefault();
+    
+            this.injecteCitation();
+        });
     }
 
 
@@ -73,17 +76,11 @@ class GenTupiIpsum {
         this._elTupiGerado.innerHTML = textoTupiIpsum[randomId];
         */
     }
-
-
-
-
-
-
-
-
-
-
+    
 }
 
 
 
+
+// Create an instance of GenTupiIpsum and initialize it
+const genTupiIpsum = new GenTupiIpsum(document.querySelector("[data-js-tupi-ipsum]"));
